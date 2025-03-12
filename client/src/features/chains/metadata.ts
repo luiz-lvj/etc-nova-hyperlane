@@ -41,9 +41,6 @@ export async function assembleChainMetadata(
   registryChainMetadata = objFilter(registryChainMetadata, (c, m): m is ChainMetadata =>
     chainsInTokens.includes(c),
   );
-
-  
-
   // TODO have the registry do this automatically
   registryChainMetadata = await promiseObjAll(
     objMap(
@@ -55,16 +52,7 @@ export async function assembleChainMetadata(
     ),
   );
 
-  console.log("registryChainMetadata", registryChainMetadata);
-  console.log("filesystemMetadata", filesystemMetadata);
-
-  let chainMetadata = mergeChainMetadataMap(registryChainMetadata, filesystemMetadata);
-
-  //chainMetadata = objFilter(chainMetadata, (chainName, metadata): metadata is ChainMetadata => chainName === "basesepolia");
-
-
-
-
+  const chainMetadata = mergeChainMetadataMap(registryChainMetadata, filesystemMetadata);
   const chainMetadataWithOverrides = mergeChainMetadataMap(chainMetadata, storeMetadataOverrides);
   return { chainMetadata, chainMetadataWithOverrides };
 }

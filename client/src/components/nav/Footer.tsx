@@ -1,11 +1,8 @@
-import { DiscordIcon, GithubIcon, HyperlaneLogo, TwitterIcon } from '@hyperlane-xyz/widgets';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../images/logos/logo.png';
 import { ReactNode } from 'react';
-import { links } from '../../consts/links';
-import { Color } from '../../styles/Color';
-
 type FooterLink = {
   title: string;
   url: string;

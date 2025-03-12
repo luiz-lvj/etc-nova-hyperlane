@@ -509,7 +509,6 @@ function ReviewDetails({ visible }: { visible: boolean }) {
 function WarningBanners() {
   const { values } = useFormikContext<TransferFormValues>();
 
-  console.log("values", values);
   return (
     // Max height to prevent double padding if multiple warnings are visible
     <div className="max-h-10">

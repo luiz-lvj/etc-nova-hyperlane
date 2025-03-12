@@ -1,10 +1,4 @@
-import {
-  basesepolia,
-  eclipsemainnet,
-  eclipsemainnetAddresses,
-  solanamainnet,
-  solanamainnetAddresses,
-} from '@hyperlane-xyz/registry';
+
 import { ChainMap, ChainMetadata, ExplorerFamily } from '@hyperlane-xyz/sdk';
 import { ProtocolType } from '@hyperlane-xyz/utils';
 
