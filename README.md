@@ -30,4 +30,4 @@ Below we can see a simple flow of a bridge of tokens between two chains (Base Se
 
 This was based on the Hyperlane UI template
 
-<igm src="https://github.com/luiz-lvj/etc-nova-hyperlane/blob/master/images/quark_front.png" align="center">
+<img src="https://github.com/luiz-lvj/etc-nova-hyperlane/blob/master/images/quark_front.png" align="center">
